@@ -1,0 +1,12 @@
+{
+  "DepartmentId" : [
+    "some value" ,
+    "some value" ,
+    "some value" ,
+    "some short value" ,
+    "some string value" ,
+    "some short value" ,
+    "some string value"
+  ] ,
+  "DepartmentName" : "some value"
+}

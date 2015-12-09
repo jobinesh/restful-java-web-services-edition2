@@ -1,0 +1,36 @@
+#%RAML 0.8
+title: department resource
+version: 1.0
+baseUri: "http://localhost:8080/hrapp/webresources"
+schemas:
+  - departments: !include schemas/departments.xsd
+  - departments-jsonschema: !include schemas/departments-jsonschema.json
+/departments: 
+  post: 
+    body: 
+      application/json: 
+        schema: departments-jsonschema
+        example: !include examples/departments.json
+    responses: 
+      200: 
+  get: 
+    queryParameters: 
+      from: 
+        type: integer
+      to: 
+        type: integer
+    responses: 
+      200: 
+        body: 
+          application/json: 
+  /{id}: 
+    uriParameters: 
+      id: 
+        type: integer
+    put: 
+      body: 
+        application/json: 
+          schema: departments-jsonschema
+          example: !include examples/departments.json
+      responses: 
+        200: 

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<departments>
+    <DepartmentId>some value</DepartmentId>
+    <DepartmentName>some value</DepartmentName>
+    <DepartmentId>some value</DepartmentId>
+    <DepartmentName>some value</DepartmentName>
+    <departmentId>some short value</departmentId>
+    <departmentName>some string value</departmentName>
+    <departmentId>some short value</departmentId>
+    <departmentName>some string value</departmentName>
+</departments>
